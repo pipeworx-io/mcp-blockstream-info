@@ -1,21 +1,23 @@
-# mcp-blockstream-info
+# @pipeworx/blockstream-info
 
-Blockstream.info Esplora MCP — Bitcoin block/tx/address explorer.
+Blockstream Bitcoin block explorer MCP — Esplora API at blockstream.info. Mainnet by default; pass `network: "testnet"` for testnet. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `tip_height` | Current block height of the chain tip. |
-| `block` | Block by 64-char hex hash or by height. |
-| `transaction` | Transaction details by txid. |
-| `tx_status` | Confirmation status for a txid (block_height, block_hash, confirmed). |
-| `address` | Address summary (chain + mempool stats). |
-| `address_txs` | Recent transactions for an address (mempool + confirmed). |
-| `mempool` | Mempool size + fee histogram. |
-| `fee_estimates` | Recommended sat/vB by confirmation target. |
+- `tip_height(network?)` — current block height
+- `block(hash_or_height, network?)` — block by hash or height
+- `transaction(txid, network?)` — transaction details
+- `tx_status(txid, network?)` — confirmation status
+- `address(address, network?)` — address summary (chain + mempool stats)
+- `address_txs(address, network?)` — recent transactions for an address
+- `mempool(network?)` — mempool size + fee histogram
+- `fee_estimates(network?)` — recommended sat/vB by confirmation target
+
+## Data source
+
+`https://blockstream.info/api/` (mainnet) and `https://blockstream.info/testnet/api/` (testnet) — both serve the [Esplora REST API](https://github.com/Blockstream/esplora/blob/master/API.md).
 
 ## Quick Start
 
@@ -31,7 +33,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -55,7 +57,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
