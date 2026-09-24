@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/blockstream-info",
   "title": "Blockstream Info",
-  "description": "Blockstream Esplora Bitcoin block explorer (mainnet + testnet)",
-  "version": "0.1.0",
+  "description": "Blockstream.info Esplora MCP — Bitcoin block/tx/address explorer.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/blockstream-info",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-blockstream-info",
