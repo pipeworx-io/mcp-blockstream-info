@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-blockstream-info",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Blockstream.info Esplora MCP — Bitcoin block/tx/address explorer.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-255b6f3c434dd19d2e04fc6cc5c25a4fe0b3a72749aa9fc2266609a4db1d7f05",
-    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
+    "sourceHash": "v1-5434808901774d0cfa0479112d33448983d5ba7e72ef76c7084854c84edb10c7",
+    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
   }
 }
